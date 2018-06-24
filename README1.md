@@ -6,8 +6,8 @@ In this project, you will be developing the estimation portion of the controller
 
 ## Writeup ##
 
-### Implemented body rate control in C++. ###
-#### The controller should be a proportional controller on body rates to commanded moments. The controller should take into account the moments of inertia of the drone when calculating the commanded moments. ####
+### Step 1: Sensor Noise ###
+#### For the controls project, the simulator was working with a perfect set of sensors, meaning none of the sensors had any noise. The first step to adding additional realism to the problem, and developing an estimator, is adding noise to the quad's sensors. The calculated standard deviation should correctly capture ~68% of the sensor measurements. ####
 
 - Translate the commanded roll, pitch and yaw into desired rotational acceleration with proportional controller(pqrCmd - pqr).
 ```
