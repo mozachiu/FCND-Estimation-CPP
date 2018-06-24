@@ -29,7 +29,7 @@ PASS: ABS(Quad.IMU.AX-0.000000) was less than MeasuredStdDev_AccelXY for 68% of 
 - use the Quaternion<float> class, which has a handy FromEuler123_RPY function for creating a quaternion from Euler Roll/PitchYaw.
 ```
     Quaternion<float> atd = Quaternion<float>::FromEuler123_RPY(rollEst, pitchEst, ekfState(6));
-    attitude.IntegrateBodyRate(gyro, dtIMU); //this uses quaternions
+    atd.IntegrateBodyRate(gyro, dtIMU); //this uses quaternions
 
 ```
 - Normalize yaw to -pi .. pi
@@ -45,3 +45,6 @@ PASS: ABS(Quad.Est.E.MaxEuler) was less than 0.100000 for at least 3.000000 seco
 <p align="center">
 <img src="images/FCNDEP03.png" width="400"/>
 </p>
+
+### Step 3: Prediction Step ###
+####  Implementing the prediction step of the filter.  ####
