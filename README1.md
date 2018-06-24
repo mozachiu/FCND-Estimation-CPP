@@ -16,7 +16,9 @@ MeasuredStdDev_GPSPosXY = .6
 MeasuredStdDev_AccelXY = .5
 ```
 - The Result :
-- PASS: ABS(Quad.IMU.AX-0.000000) was less than MeasuredStdDev_AccelXY for 68% of the time.
+```
+PASS: ABS(Quad.IMU.AX-0.000000) was less than MeasuredStdDev_AccelXY for 68% of the time.
+```
 <p align="center">
 <img src="images/FCNDEP01.png" width="400"/>
 </p>
