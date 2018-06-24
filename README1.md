@@ -26,14 +26,22 @@ PASS: ABS(Quad.IMU.AX-0.000000) was less than MeasuredStdDev_AccelXY for 68% of 
 ### Step 2: Attitude Estimation ###
 ####  In this step, you will be improving the complementary filter-type attitude filter with a better rate gyro attitude integration scheme. The improved integration scheme should result in an attitude estimator of < 0.1 rad for each of the Euler angles for a duration of at least 3 seconds during the simulation.  ####
 
-- The equation below is used to calcuate body rate command in roll pitch controller.
+- use the Quaternion<float> class, which has a handy FromEuler123_RPY function for creating a quaternion from Euler Roll/PitchYaw.
+```
+    Quaternion<float> atd = Quaternion<float>::FromEuler123_RPY(rollEst, pitchEst, ekfState(6));
+    attitude.IntegrateBodyRate(gyro, dtIMU); //this uses quaternions
+
+```
+- Normalize yaw to -pi .. pi
+- Compute predictedPitch, predictedRoll non-linear with complimentary filter for attitude using quaternions.
 <p align="center">
-<img src="images/FCND02.png" width="400"/>
+<img src="images/FCNDEP02.png" width="400"/>
 </p>
 
+- The Result :
 ```
-pqrCmd.x = (R21 * bc_dot.x - R11 * bc_dot.y) / R33;
-pqrCmd.y = (R22 * bc_dot.x - R12 * bc_dot.y) / R33;
-
+PASS: ABS(Quad.Est.E.MaxEuler) was less than 0.100000 for at least 3.000000 seconds
 ```
-- Based on a desired global lateral acceleration and desired collective thrust.
+<p align="center">
+<img src="images/FCNDEP03.png" width="400"/>
+</p>
