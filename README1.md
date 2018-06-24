@@ -15,7 +15,7 @@ In this project, you will be developing the estimation portion of the controller
 MeasuredStdDev_GPSPosXY = .6
 MeasuredStdDev_AccelXY = .5
 ```
-- The Resule :
+- The Result :
 <p align="center">
 <img src="images/FCNDEP01.png" width="400"/>
 </p>
