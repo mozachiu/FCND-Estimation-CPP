@@ -20,8 +20,8 @@ MeasuredStdDev_AccelXY = .5
 <img src="images/FCNDEP01.png" width="400"/>
 </p>
 
-### Implement roll pitch control in C++. ###
-#### The controller should use the acceleration and thrust commands, in addition to the vehicle attitude to output a body rate command. The controller should account for the non-linear transformation from local accelerations to body rates. Note that the drone's mass should be accounted for when calculating the target angles. ####
+### Step 2: Attitude Estimation ###
+####  In this step, you will be improving the complementary filter-type attitude filter with a better rate gyro attitude integration scheme. The improved integration scheme should result in an attitude estimator of < 0.1 rad for each of the Euler angles for a duration of at least 3 seconds during the simulation.  ####
 
 - The equation below is used to calcuate body rate command in roll pitch controller.
 <p align="center">
