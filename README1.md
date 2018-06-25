@@ -42,12 +42,17 @@ PASS: ABS(Quad.IMU.AX-0.000000) was less than MeasuredStdDev_AccelXY for 68% of 
 ```
 PASS: ABS(Quad.Est.E.MaxEuler) was less than 0.100000 for at least 3.000000 seconds
 ```
+
 <p align="center">
 <img src="images/FCNDEP03.png" width="400"/>
 </p>
 
 ### Step 3: Prediction Step ###
 ####  Implementing the prediction step of the filter.  ####
+- The Result :
+```
 - PredictState() function
 -- There are 7 states should be predicted : x, y, z, x_dot, y_dot, z_dot and yaw
 -- The yaw integral is already done in the IMU update.
+- The Result :
+```
