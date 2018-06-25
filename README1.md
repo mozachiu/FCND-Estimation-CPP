@@ -61,8 +61,12 @@ PASS: ABS(Quad.Est.E.MaxEuler) was less than 0.100000 for at least 3.000000 seco
 <img src="images/FCNDEP04.png" width="400"/>
 </p>
 
-- The correct calculation of the Rgb prime matrix
+#####  The correct calculation of the Rgb prime matrix ##### 
 ```
 1. Return the partial derivative of the Rbg rotation matrix with respect to yaw.
-3. References
+2. Putting the right sin() and cos() functions in the right place.
 ```
+- References
+<p align="center">
+<img src="images/FCNDEP05.png" width="400"/>
+</p>
