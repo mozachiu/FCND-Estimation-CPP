@@ -72,3 +72,17 @@ PASS: ABS(Quad.Est.E.MaxEuler) was less than 0.100000 for at least 3.000000 seco
 <p align="center">
 <img src="images/FCNDEP05.png" width="600"/>
 </p>
+
+- Predict the current covariance forward by dt
+```
+1. Use the class MatrixXf create a matrix.
+2. Calculate the necessary helper matrices, building up the transition jacobian.
+3. Update cov by "ekfCov = gPrime * ekfCov * gPrime.transpose() + Q;"
+```
+##### References #####
+<p align="center">
+<img src="images/FCNDEP06.png" width="600"/>
+</p>
+<p align="center">
+<img src="images/FCNDEP07.png" width="600"/>
+</p>
