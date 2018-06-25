@@ -68,5 +68,5 @@ PASS: ABS(Quad.Est.E.MaxEuler) was less than 0.100000 for at least 3.000000 seco
 ```
 - References
 <p align="center">
-<img src="images/FCNDEP05.png" width="400"/>
+<img src="images/FCNDEP05.png" width="600"/>
 </p>
