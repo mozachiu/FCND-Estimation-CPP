@@ -12,7 +12,7 @@ In this project, you will be developing the estimation portion of the controller
 - The standard deviation of Quad.GPS.X and  Quad.IMU.AX from the config logs config/log/Graph1.txt and config/log/Graph1.txt is about 0.6 and 0.5.
 - Set the values in config/6_Sensornoise.txt as below:
 ```
-MeasuredStdDev_GPSPosXY = .6
+MeasuredStdDev_GPSPosXY = ?
 MeasuredStdDev_AccelXY = .5
 ```
 - The Result :
