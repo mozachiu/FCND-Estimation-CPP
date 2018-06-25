@@ -54,5 +54,14 @@ PASS: ABS(Quad.Est.E.MaxEuler) was less than 0.100000 for at least 3.000000 seco
 ```
 1. There are 7 states should be predicted : x, y, z, x_dot, y_dot, z_dot and yaw
 2. The yaw integral is already done in the IMU update.
+3. References
+```
+<p align="center">
+<img src="images/FCNDEP04.png" width="400"/>
+</p>
 
+- The correct calculation of the Rgb prime matrix
+```
+1. Return the partial derivative of the Rbg rotation matrix with respect to yaw.
+3. References
 ```
