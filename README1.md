@@ -65,6 +65,8 @@ PASS: ABS(Quad.Est.E.MaxEuler) was less than 0.100000 for at least 3.000000 seco
 ```
 1. Return the partial derivative of the Rbg rotation matrix with respect to yaw.
 2. Putting the right sin() and cos() functions in the right place.
+3. theta = pitch; phi = roll; psi = yaw
+
 ```
 - References
 <p align="center">
