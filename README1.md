@@ -112,6 +112,25 @@ PASS: ABS(Quad.Est.E.MaxEuler) was less than 0.100000 for at least 3.000000 seco
 <img src="images/FCNDEP10.png" width="600"/>
 </p>
 
+### Step 5: Closed Loop + GPS Update ### 
+
+####  The estimator should correctly incorporate the GPS information to update the current state estimate.  ####
+
+- GPS UPDATE
+##### References #####
+<p align="center">
+<img src="images/FCNDEP11.png" width="600"/>
+</p>
+```
+1. Get yaw estimates and update identity matrix hPrime.
+2. Do the Loop from 0 to 5.
+```
+- The Result :
+
+<p align="center">
+<img src="images/FCNDEP12.png" width="600"/>
+</p>
+
 ## Flight Evaluation ##
 
 ### Meet the performance criteria of each step. ###
