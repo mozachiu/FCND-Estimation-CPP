@@ -96,6 +96,17 @@ PASS: ABS(Quad.Est.E.MaxEuler) was less than 0.100000 for at least 3.000000 seco
 <img src="images/FCNDEP09.png" width="600"/>
 </p>
 
+### Step 4: Magnetometer Update ### 
+
+#### Adding the information from the magnetometer to improve filter's performance in estimating the vehicle's heading.   ####
+
+- 
+```
+1. Get the current estimated yaw.
+2. Normalize the difference between your measured and estimated yaw.
+3. Update Mesurement model hPrime.
+```
+
 ## Flight Evaluation ##
 
 ### Meet the performance criteria of each step. ###
