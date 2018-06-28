@@ -129,6 +129,10 @@ PASS: ABS(Quad.Est.E.MaxEuler) was less than 0.100000 for at least 3.000000 seco
 <img src="images/FCNDEP11.png" width="600"/>
 </p>
 
+### Flight Evaluation ###
+
+#### De-tune your controller to successfully fly the final desired box trajectory with your estimator and realistic sensors. ####
+
 - The Result :
 ```
 PASS: ABS(Quad.Est.E.Pos) was less than 1.000000 for at least 20.000000 seconds
@@ -137,18 +141,4 @@ PASS: ABS(Quad.Est.E.Pos) was less than 1.000000 for at least 20.000000 seconds
 <img src="images/FCNDEP12.png" width="600"/>
 </p>
 
-## Flight Evaluation ##
 
-### Meet the performance criteria of each step. ###
-For each step of the project, the final estimator should be able to successfully meet the performance criteria with the controller provided. The estimator's parameters should be properly adjusted to satisfy each of the performance criteria elements. 
-
-
-#### De-tune your controller to successfully fly the final desired box trajectory with your estimator and realistic sensors. ####
-The controller developed in the previous project should be de-tuned to successfully meet the performance criteria of the final scenario (<1m error for entire box flight). 
-
-```
-- QuadController.cpp is updated from last project
-- QuadControlParams.txt is updated from last project
-- The controller added from previous project successfully meet the performance criteria of the final scenario (<1m error for entire box flight).
-- Position and velocity gains have gone down from the initial value. This is enough to make the drone fly with an error of <1m for the entire box flight as shown in Task 5.
-```
