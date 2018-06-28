@@ -122,6 +122,7 @@ PASS: ABS(Quad.Est.E.MaxEuler) was less than 0.100000 for at least 3.000000 seco
 ```
 1. Get yaw estimates and update identity matrix hPrime.
 2. Do the Loop from 0 to 5.
+3. Modify 11_GPSUpdate.txt : Quad.UseIdealEstimator = 0
 ```
 ##### References #####
 <p align="center">
