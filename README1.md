@@ -21,7 +21,7 @@ PASS: ABS(Quad.GPS.X-Quad.Pos.X) was less than MeasuredStdDev_GPSPosXY for 68% o
 PASS: ABS(Quad.IMU.AX-0.000000) was less than MeasuredStdDev_AccelXY for 67% of the time
 ```
 <p align="center">
-<img src="images/FCNDEP01.png" width="400"/>
+<img src="images/FCNDEP01.png" width="600"/>
 </p>
 
 ### Step 2: Attitude Estimation ###
@@ -36,7 +36,7 @@ PASS: ABS(Quad.IMU.AX-0.000000) was less than MeasuredStdDev_AccelXY for 67% of 
 - Normalize yaw to -pi .. pi
 - Compute predictedPitch, predictedRoll non-linear with complimentary filter for attitude using quaternions.
 <p align="center">
-<img src="images/FCNDEP02.png" width="400"/>
+<img src="images/FCNDEP02.png" width="600"/>
 </p>
 
 - The Result :
