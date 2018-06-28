@@ -9,7 +9,7 @@ In this project, you will be developing the estimation portion of the controller
 ### Step 1: Sensor Noise ###
 #### For the controls project, the simulator was working with a perfect set of sensors, meaning none of the sensors had any noise. The first step to adding additional realism to the problem, and developing an estimator, is adding noise to the quad's sensors. The calculated standard deviation should correctly capture ~68% of the sensor measurements. ####
 
-- The standard deviation of Quad.GPS.X and  Quad.IMU.AX from the config logs config/log/Graph1.txt and config/log/Graph1.txt is about 0.6 and 0.5.
+- The standard deviation of Quad.GPS.X and  Quad.IMU.AX from the config logs config/log/Graph1.txt and config/log/Graph1.txt is about 0.72 and 0.49.
 - Set the values in config/6_Sensornoise.txt as below:
 ```
 MeasuredStdDev_GPSPosXY = .72
