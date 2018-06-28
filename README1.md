@@ -35,8 +35,10 @@ PASS: ABS(Quad.IMU.AX-0.000000) was less than MeasuredStdDev_AccelXY for 67% of 
 ```
 - Normalize yaw to -pi .. pi
 - Compute predictedPitch, predictedRoll non-linear with complimentary filter for attitude using quaternions.
+
+##### References #####
 <p align="center">
-<img src="images/FCNDEP02.png" width="600"/>
+<img src="images/FCNDEP02.png" width="400"/>
 </p>
 
 - The Result :
