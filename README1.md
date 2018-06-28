@@ -61,7 +61,7 @@ PASS: ABS(Quad.Est.E.MaxEuler) was less than 0.100000 for at least 3.000000 seco
 ```
 ##### References #####
 <p align="center">
-<img src="images/FCNDEP04.png" width="400"/>
+<img src="images/FCNDEP04.png" width="300"/>
 </p>
 
 -  The correct calculation of the Rgb prime matrix  
@@ -73,7 +73,7 @@ PASS: ABS(Quad.Est.E.MaxEuler) was less than 0.100000 for at least 3.000000 seco
 ```
 ##### References #####
 <p align="center">
-<img src="images/FCNDEP05.png" width="600"/>
+<img src="images/FCNDEP05.png" width="500"/>
 </p>
 
 - Predict the current covariance forward by dt
